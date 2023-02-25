@@ -14,7 +14,7 @@ body
     font-family: 'Teko', sans-serif;
     font-weight: bolder;
     color : #00ABB3; 
-    font-size : 8rem;
+    font-size : 72px;
 }
 .dices
 {
@@ -34,6 +34,32 @@ p
     color : #00ABB3; 
     margin-bottom: 20px;
 }
+button
+{
+    background-color: red;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: 5px solid gray;
+    transition: 0.3s ease-in;
+    font-weight: 200;
+}
+button:hover
+{
+    background-color: lemonchiffon;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    font-weight: 400;
+}
+.click
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
 h3
 {
     margin-top: 50px;
@@ -42,4 +68,45 @@ h3
     color: white;
     font-size: 30px;
     font-weight: 100;
+}
+@media only screen and (max-width: 70.95em) 
+{
+    .hd
+    {
+        margin-top: 20px;
+        display: flex;
+        font-size: 36px;
+        justify-content: center;
+    }
+    .rfrsh
+    {
+        font-size: 50px;
+    }
+    .dices
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dices img
+    {
+        object-fit: contain;
+    }
+    .fst
+    {
+        margin-right: 0px;
+    }
+    .scnd
+    {
+        margin-top: 20px;
+    }
+    .click
+    {
+        margin: 20px 0px;
+    }
+    h3
+    {
+        margin-top: 10px;
+    }
 }
